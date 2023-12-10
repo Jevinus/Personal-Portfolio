@@ -1,0 +1,148 @@
+/* DO NOT DELETE */
+/* Background animation */
+#particles-js {
+  height: 100vh;
+  min-width: 100%;
+  background: #59a4d9;
+  font-size: 32px;
+}
+
+/* Title positioning */
+ .title {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  right: 30%;
+  text-align: center;
+}
+
+/* Testable // Delete */
+@media (max-width: 768px) {
+     .nav-con {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0px;
+     }
+
+     .nav-icon {
+       width: 60px!important;
+       height: 50px!important;
+     }
+
+     li {
+      font-size: 28px;
+     }
+
+     .title {
+      font-size: 30px;
+     }
+
+     .scroll-down {
+      height: 60px!important;
+      width: 60px!important;
+      border-radius: 40px!important;
+      position: absolute;
+      left: 45%!important;
+      right: 30%!important;
+     }
+}   
+
+@media (max-width: 576px) {
+     li {
+      font-size: 20px;
+     }
+
+      #particles-js {
+        max-height: 100vh;
+        min-width: 95vw;
+        background: #59a4d9;
+        font-size: 32px;
+     }
+
+     .nav-icon {
+      width: 40px!important;
+      height: 40px!important;
+    }
+
+    .title {
+      font-size: 24px;
+    }
+
+}
+
+@media (max-width: 450px) {
+     .title {
+       font-size: 17px;
+     }
+
+     li {
+      font-size: 16px;
+     }
+}
+
+@media (max-width: 350px) {
+      .title {
+       font-size: 14px;
+     }
+
+     li {
+      font-size: 10px;
+     }
+}
+
+/* Scroll button */
+.scroll-down {
+  height: 70px;
+  width: 70px;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  left: 47%;
+  right: 30%;
+  bottom: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 15px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid white;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+.scroll-down::before {
+  top: 30%;
+  animation-delay: 0.3s;
+}
+
+.scroll-down:hover { 
+  background-color:#b4b6b8; transition: 0.4s; 
+}
+
+@keyframes scroll-down {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+/* End scroll button */
+
+/* Slider */

@@ -1,0 +1,114 @@
+* { 
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none!important;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* General container */
+.container {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Name intro */
+.title {
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}
+
+.name-color {
+  text-shadow: 4px 4px 10px white;
+  color: white(2, 68, 68);
+}
+
+
+/* Navigation */
+.navbar {
+  color: white;
+  background: #86b8db;
+  border-color: grey;
+  position: sticky;
+}
+
+/* Nav accessibility */
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: grey;
+}
+
+/* Nav main */
+.social-links {
+  display: flex;
+  padding-left: 0px;
+  text-decoration: none!important;
+}
+
+li {
+  margin: 8px;
+  margin-left: 12px;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+/* Nav positioning */
+.nav-con {
+  margin-left: 5px!important;
+  margin-right: 10px!important;
+  max-width: 100%!important;
+}
+
+/* Nav links */
+.nav-icon {
+  height: 48px;
+  width: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* About me */
+.about-me {
+  height: 250px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.about-head {
+
+}
+
+.about-me-desc {
+  max-width: 75vw;
+}
+
+
+
+/* Footer */
+.bottom {
+  height: 100px;
+  border: 2px solid grey;
+  background-color: #59a4d9;
+}
