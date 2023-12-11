@@ -35,8 +35,7 @@ a {
 .navbar {
   color: white;
   background: #86b8db;
-  border-color: grey;
-  position: sticky;
+  position: sticky!important;
 }
 
 /* Nav accessibility */
@@ -46,6 +45,10 @@ a:visited {
 
 a:hover {
   color: grey;
+}
+
+a:link {
+  color:white;
 }
 
 /* Nav main */
@@ -83,6 +86,10 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 /* About me */
@@ -102,6 +109,20 @@ li {
 
 .about-me-desc {
   max-width: 75vw;
+}
+
+/* Columns */
+.column-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.column-about {
+  height: 80vh;
+  width: 25vw;
+  background: rgb(223, 223, 223);
+  border: 2px solid rgb(22, 22, 36);
 }
 
 
