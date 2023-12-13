@@ -55,6 +55,15 @@
       left: 45%!important;
       right: 30%!important;
      }
+
+     .projects-container {
+      display: flex;
+      flex-direction: column;
+     }
+
+     .project-item {
+      width: 80vw!important;
+     }
 }   
 
 @media (max-width: 576px) {

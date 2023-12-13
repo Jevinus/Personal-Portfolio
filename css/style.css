@@ -36,6 +36,7 @@ a {
   color: white;
   background: #86b8db;
   position: sticky!important;
+  top: 0;
 }
 
 /* Nav accessibility */
@@ -97,14 +98,16 @@ li {
   height: 250px;
   width: 100vw;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   text-align: center;
   flex-direction: column;
+  background-color: #86b8db;
+  position: absolute;
 }
 
 .about-head {
-
+  color: white;
 }
 
 .about-me-desc {
@@ -116,16 +119,46 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 16px;
+  position: relative;
+  margin-top: 150px;
 }
 
 .column-about {
   height: 80vh;
-  width: 25vw;
+  width: 76vw;
   background: rgb(223, 223, 223);
   border: 2px solid rgb(22, 22, 36);
+  border-radius: 10px;
 }
 
+/* Projects section */
+.project-head {
+  text-align: center;
+  padding: 16px;
+}
 
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 16px;
+}
+
+.project-item {
+  width: 27vw;
+  height: 250px;
+  background-color: aqua;
+  border: 2px solid black;
+}
+
+/* Form */
+#contact-form {
+  padding: 200px;
+  background-color: aliceblue;
+  border: 2px solid grey;
+}
 
 /* Footer */
 .bottom {
