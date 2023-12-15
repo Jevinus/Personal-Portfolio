@@ -16,7 +16,7 @@
   text-align: center;
 }
 
-/* Testable // Delete */
+/* Testable */
 @media (max-width: 768px) {
      .column-about {
       width: 75vw;
@@ -27,6 +27,7 @@
       flex-direction: column;
       align-items: center;
      }
+
      .nav-con {
       display: flex;
       justify-content: center;
@@ -64,11 +65,26 @@
      .project-item {
       width: 80vw!important;
      }
+
+     .box-container {
+      flex-direction: column;
+     }
+     
+     .box {
+      max-height: 30vh;
+      width: 60vw;
+     }
+
+     .column-about {
+      justify-content: center;
+      align-items: center;
+      height: 1200px;
+     }
 }   
 
 @media (max-width: 576px) {
      li {
-      font-size: 20px;
+      font-size: 18px;
      }
 
       #particles-js {
@@ -85,27 +101,31 @@
 
     .title {
       font-size: 24px;
+      position: absolute;
+      top: 40%;
+      left: 25%;
+      right: 20%;
     }
 
 }
 
 @media (max-width: 450px) {
      .title {
-       font-size: 18px;
+       font-size: 20px;
      }
 
      li {
-      font-size: 16px;
+      font-size: 20px;
      }
 }
 
 @media (max-width: 378px) {
       .title {
-       font-size: 1rem;
+       font-size: 16px;
      }
 
      li {
-      font-size: 10px;
+      font-size: 13px;
      }
 }
 

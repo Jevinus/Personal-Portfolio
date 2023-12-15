@@ -37,6 +37,7 @@ a {
   background: #86b8db;
   position: sticky!important;
   top: 0;
+  border-bottom: 2px solid rgba(133, 133, 133, 0.25);
 }
 
 /* Nav accessibility */
@@ -82,20 +83,9 @@ li {
   align-items: center;
 }
 
-.column {
-  display: flex;  
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: block;
-  flex-basis: 0;
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-
 /* About me */
 .about-me {
-  height: 250px;
+  height: 400px;
   width: 100vw;
   display: flex;
   justify-content: start;
@@ -106,30 +96,73 @@ li {
   position: absolute;
 }
 
+.about-me-desc {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  margin-top: 24px;
+}
+
+.text-line-size {
+  line-height: 1.5;
+  max-width: 60vw;
+}
+
 .about-head {
   color: white;
 }
 
-.about-me-desc {
-  max-width: 75vw;
-}
 
 /* Columns */
+
 .column-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 16px;
-  position: relative;
-  margin-top: 150px;
-}
+  margin-top: 50px;
 
+}
+  
 .column-about {
-  height: 80vh;
+  height: 85vh;
+  width: 25vw;
   width: 76vw;
   background: rgb(223, 223, 223);
-  border: 2px solid rgb(22, 22, 36);
   border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Column boxes */
+.box {
+  width: 35vw;
+  height: 35vh;
+  background-color: white;
+  border: 2px solid gray;
+  margin: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+/* Box texts */
+
+.box-1-text-header {
+  font-size: 28px;
+  margin-bottom: 32px;
+}
+
+.box-1-text {
+  font-size: 14px;
 }
 
 /* Projects section */
