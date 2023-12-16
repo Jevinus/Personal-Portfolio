@@ -18,6 +18,8 @@
 
 /* Testable */
 @media (max-width: 768px) {
+
+    /* Columns */
      .column-about {
       width: 75vw;
       margin-bottom: 10px;
@@ -27,6 +29,17 @@
       flex-direction: column;
       align-items: center;
      }
+     
+     .box-1-text-header {
+
+     }
+
+     .box-1-text {
+      font-size: 12px;
+      font-weight: 500;
+     }
+
+    /* Columns end */
 
      .nav-con {
       display: flex;
@@ -71,7 +84,7 @@
      }
      
      .box {
-      max-height: 30vh;
+      max-height: 28vh;
       width: 60vw;
      }
 
@@ -110,6 +123,10 @@
 }
 
 @media (max-width: 450px) {
+    .box-1-text {
+      font-size: 10px;
+      font-weight: 500;
+     }
      .title {
        font-size: 20px;
      }
@@ -121,7 +138,7 @@
 
 @media (max-width: 378px) {
       .title {
-       font-size: 16px;
+       font-size: 18px;
      }
 
      li {
