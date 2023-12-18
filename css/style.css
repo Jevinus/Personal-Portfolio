@@ -86,7 +86,7 @@ li {
 /* About me */
 .about-me {
   height: 400px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -114,7 +114,6 @@ li {
 
 
 /* Columns */
-
 .column-container {
   display: flex;
   flex-direction: row;
@@ -157,8 +156,8 @@ li {
   flex-direction: row;
   gap: 16px;
 }
-/* Box texts */
 
+/* Text boxes */
 .box-1-text-header {
   font-size: 28px;
   margin-bottom: 32px;
@@ -167,6 +166,46 @@ li {
 .box-1-text {
   font-size: 14px;
 }
+
+/* Description section */
+#personal-desc-container {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.personal-desc {
+  border-top: 1px solid rgba(133, 133, 133, 0.25);
+  height: 400px;
+  width: 28vw;
+  line-height: 1.5;
+}
+
+.personal-desc-title {
+  padding: 86px;
+  text-align: start;
+  font-size: 36px;
+}
+
+.desc-header {
+  text-align: start;
+  padding-left: 0;
+  margin-left: 0;
+  padding-top: 40px;
+  padding-bottom: 24px;
+  min-width: 50px;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(9,18,127,1) 38%, rgba(9,27,133,1) 41%, rgba(8,58,154,1) 51%, rgba(7,71,162,1) 55%, rgba(35,127,145,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.desc-para {
+  text-align: start;
+}
+
 
 /* Projects section */
 .project-head {

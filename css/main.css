@@ -2,7 +2,7 @@
 /* Background animation */
 #particles-js {
   height: 100vh;
-  min-width: 100%;
+  width: 100%;
   background: #59a4d9;
   font-size: 32px;
 }
@@ -28,10 +28,6 @@
      .column-container {
       flex-direction: column;
       align-items: center;
-     }
-     
-     .box-1-text-header {
-
      }
 
      .box-1-text {
@@ -93,6 +89,31 @@
       align-items: center;
       height: 1200px;
      }
+
+     #personal-desc-container {
+      flex-direction: column;
+     }
+
+     .personal-desc {
+      width: 90vw;
+      height: 300px;
+     }
+
+     .desc-para {
+      max-width: 90vw!important;
+      margin: 10px;
+      min-height: 90vh!important;
+      text-align: start;
+     }
+
+     .desc-header {
+      text-align: center;
+     }
+
+     .personal-desc-title {
+      font-size: 24px;
+      text-align: center;
+     }
 }   
 
 @media (max-width: 576px) {
@@ -133,6 +154,11 @@
 
      li {
       font-size: 20px;
+     }
+
+     .personal-desc {
+      width: 90vw;
+      height: 360px;
      }
 }
 
