@@ -16,6 +16,14 @@
   text-align: center;
 }
 
+@media (max-width: 1024px) {
+
+  .project-item {
+    width: 300px!important;
+   }
+     
+}
+
 /* Testable */
 @media (max-width: 768px) {
 
@@ -100,10 +108,10 @@
      }
 
      .desc-para {
-      max-width: 90vw!important;
-      margin: 10px;
-      min-height: 90vh!important;
-      text-align: start;
+      min-width: 80vw!important;
+
+      min-height: 80vh!important;
+      text-align: center;
      }
 
      .desc-header {

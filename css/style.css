@@ -196,7 +196,7 @@ li {
   padding-top: 40px;
   padding-bottom: 24px;
   min-width: 50px;
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(9,18,127,1) 38%, rgba(9,27,133,1) 41%, rgba(8,58,154,1) 51%, rgba(7,71,162,1) 55%, rgba(35,127,145,1) 100%);
+  background: linear-gradient(90deg, rgb(42, 35, 156) 0%, rgba(9,9,121,1) 35%, rgba(9,18,127,1) 38%, rgba(9,27,133,1) 41%, rgba(8,58,154,1) 51%, rgba(7,71,162,1) 55%, rgba(35,127,145,1) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -222,10 +222,30 @@ li {
 }
 
 .project-item {
-  width: 27vw;
-  height: 250px;
-  background-color: aqua;
+  width: 400px;
+  height: 300px;
+  background-color: grey;
   border: 2px solid black;
+}
+
+.img-prjct {
+  max-height: 100%;
+  min-width: 100%;
+  
+}
+
+.img-prjct:hover {
+  opacity: 0.25;
+  background-color: grey;
+  transition: 0.8s; 
+  cursor: pointer;
+}
+
+.hover-text { 
+  display: none; 
+}
+.hover-text:hover { 
+  display: block;
 }
 
 /* Form */

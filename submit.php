@@ -1,14 +1,19 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-  $name = $_POST["name"];
-  $email = $_POST["email"];
-  $message = $_POST["message"];
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
 
-  // Example: Sending an email
+  // Send email using PHP's mail() function or a library like PHPMailer
+  // Example using mail() function:
   $to = "privysinner@proton.me";
-  $subject = "New Message from Contact Form";
+  $subject = "New Contact Form Submission";
   $body = "Name: $name\nEmail: $email\nMessage: $message";
 
-  mail($to, $subject, $body);
+  if (mail($to, $subject, $body)) {
+    echo "Message sent successfully!";
+  } else {
+    echo "Message failed to send.";
+  }
 }
 ?>
