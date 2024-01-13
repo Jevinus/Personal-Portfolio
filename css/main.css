@@ -16,12 +16,42 @@
   text-align: center;
 }
 
+@media (max-width: 1250px) {
+  .cl {
+    width: 330px;
+  }
+
+  .clh2 {
+    margin-top: 24px;
+    font-size: 20px
+   }
+
+   .clli {
+    color: black;
+    font-size: 16px;
+   }
+
+   .background-text {
+    height: 600px;
+    margin-bottom: -250px;
+   }
+}
+
 @media (max-width: 1024px) {
+
+  .background-text {
+    height: 500px;
+    margin-bottom: -130px;
+  }
+
+  .cl {
+    width: 280px;
+  }
 
   .project-item {
     width: 300px!important;
    }
-     
+
 }
 
 /* Testable */
@@ -86,7 +116,7 @@
      .box-container {
       flex-direction: column;
      }
-     
+
      .box {
       max-height: 28vh;
       width: 60vw;
@@ -122,11 +152,54 @@
       font-size: 24px;
       text-align: center;
      }
-}   
+
+     .background-text {
+      height: 650px;
+      margin-bottom: -200px;
+    }
+
+    /* Columns */
+     .cl-container {
+      height: 1600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     }
+
+     .cl {
+      height: 500px!important;
+
+      width: 450px!important;
+     }
+
+     .left {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 0px;
+      border-bottom: 0px;
+     }
+
+     .mid {
+
+     }
+
+
+
+     .right {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+     }
+}
 
 @media (max-width: 576px) {
      li {
       font-size: 18px;
+     }
+
+     .p-main {
+      max-width: 80vw!important;
      }
 
       #particles-js {
@@ -149,9 +222,17 @@
       right: 20%;
     }
 
+    .cl {
+      height: 650px!important;
+      width: 370px!important;
+     }
+
 }
 
 @media (max-width: 450px) {
+    .cl {
+      width: 300px!important;
+    }
     .box-1-text {
       font-size: 10px;
       font-weight: 500;
@@ -178,6 +259,12 @@
      li {
       font-size: 13px;
      }
+}
+
+@media (max-width: 880px) {
+  .cl {
+    width:240px;
+  }
 }
 
 /* Scroll button */
@@ -212,8 +299,8 @@
   animation-delay: 0.3s;
 }
 
-.scroll-down:hover { 
-  background-color:#b4b6b8; transition: 0.4s; 
+.scroll-down:hover {
+  background-color:#b4b6b8; transition: 0.4s;
 }
 
 @keyframes scroll-down {
