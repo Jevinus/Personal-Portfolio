@@ -233,6 +233,11 @@
     .cl {
       width: 300px!important;
     }
+
+    .background-text {
+      margin-bottom: -200px;
+      height: 700px;
+    }
     .box-1-text {
       font-size: 10px;
       font-weight: 500;
