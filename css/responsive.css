@@ -192,6 +192,10 @@
     width: 500px;
     height: 300px;
   }
+
+  .footer-text {
+    font-size: 17px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -211,7 +215,14 @@
   }
 
   li {
-   font-size: 24px;
+   font-size: 24px!important;
+  }
+
+  .nav-icon {
+    height: 40px;
+    width: 40px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
 
   .title {
@@ -249,6 +260,17 @@
 }
 
 @media screen and (max-width: 481px) {
+  .title {
+    font-size: 17px;
+  }
+
+  li {
+    font-size: 16px!important;
+  }
+
+  
+
+
 
 }
 
