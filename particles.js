@@ -1497,7 +1497,7 @@ window.particlesJS = function(tag_id, params){
   canvas_el.className = pJS_canvas_class;
 
   /* set size canvas */
-  canvas_el.style.width = "98vw";
+  canvas_el.style.width = "100vw";
   canvas_el.style.height = "100vh";
 
   /* append canvas */
@@ -1530,3 +1530,15 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
   xhr.send();
 
 };
+
+
+
+
+
+
+
+function x(num) {
+  let number = 1;
+  return number;
+  console.log("Hello World");
+}

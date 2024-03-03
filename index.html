@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/form.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <title>Kevin's Portfolio</title>
 </head>
@@ -14,9 +12,10 @@
  <main>
   <div id="particles-js"></div>
    <section id="nav-landing-body">
+    <div class="button-landing" id="button_landing"></div>
      <nav class="navbar" id="nav">
 
-    <div class="container nav-con">
+    <div class="container nav-container">
 
     <!-- Left hand side of nav-->
       <ol class="social-links">
@@ -37,68 +36,66 @@
     <!-- Landing area text / intro-->
     <div class="landing-area">
       <h1 class="title">Hello, i'm <span class="name-color">Kevin</span>.<br>A <em>Front-End</em> Web <br> Developer.</h1>
-      <a href="#nav"><div class="scroll-down"></div></a>
+
+    <!-- Scroll down button-->
+      <a href="#button_landing"><div class="scroll-down"></div></a>
     </div>
   </section>
  </main>
 
  <!-- Column pre-text -->
-
-   <div class="background-text">
-
-    <h1 class="main-h">Nice to meet you!</h1>
-   <div class="p-main-cn">
-    <p class="p-main"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eveniet perspiciatis similique veniam magni officia, aspernatur, corrupti sit totam, animi numquam saepe cum sequi ut maxime tempore fugit. Expedita iusto quae molestiae excepturi magni voluptate dolorem assumenda hic quam tempora impedit temporibus odit accusantium exercitationem, numquam, perspiciatis vero! Minus, dolorum!</p>
+   <div id="about" class="column-background">
+      <h2 class="about-h2 animate-2">Nice to meet <span class="name-color">you!</span></h2>
+    <div class="para-con">
+      <p class="para animate"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eveniet perspiciatis similique veniam magni officia, aspernatur, corrupti sit totam, animi numquam saepe cum sequi ut maxime tempore fugit. Expedita iusto quae molestiae excepturi magni voluptate dolorem assumenda hic quam tempora impedit temporibus odit accusantium exercitationem, numquam, perspiciatis vero! Minus, dolorum!</p>
    </div>
   </div>
 
 
  <!-- Skills column -->
  <section>
-  <div class="cl-container">
+  <div class="column-container">
 
-    <div class="cl left">
+    <div class="column left">
       <img class="tool-icon" src="images/icons8-front-end-64.png" alt="">
-      <h2 class="clh2">Frontend development</h2>
-      <div class="toolli">
+      <h2 class="column-head">Frontend development:</h2>
+      <div class="tool-list">
        <ul>
-         <li class="clli"> <img class="pro-icon" src="images/icons8-html-5-96.png" alt="">HTML</li>
-         <li class="clli"> <img class="pro-icon" src="images/icons8-css-48.png" alt="">CSS3</li>
-         <li class="clli"> <img class="pro-icon" src="images/icons8-javascript-48.png" alt="">JavaScript</li>
-         <li class="clli">Flexbox</li>
-         <li class="clli">Grid</li>
-         <li class="clli">Bootstrap</li>
-         <li class="clli"></li>
+         <li class="column-list-item"> <img class="pro-icon" src="images/icons8-html-5-96.png" alt="HTML icon">HTML</li>
+         <li class="column-list-item"> <img class="pro-icon" src="images/icons8-css-48.png" alt="CSS icon">CSS3</li>
+         <li class="column-list-item"> <img class="pro-icon" src="images/icons8-javascript-48.png" alt="JavaScript icon">JavaScript</li>
+         <li class="column-list-item"> <img class="pro-icon" src="images/bootstrap.png" alt="Bootstrap icon">Bootstrap</li>
+         <li class="column-list-item"></li>
        </ul>
     </div>
   </div>
 
-    <div class="cl mid">
+    <div class="column mid">
       <img class="tool-icon" src="images/icons8-front-end-64 (1).png" alt="">
-      <h2 class="clh2">Backend development</h2>
+      <h2 class="column-head">Backend development:</h2>
 
-      <div class="toolli">
+      <div class="tool-list">
        <ul>
-         <li class="clli"></li>
-         <li class="clli"></li>
-         <li class="clli"></li>
-         <li class="clli"></li>
-         <li class="clli"></li>
+         <li class="column-list-item"></li>
+         <li class="column-list-item"></li>
+         <li class="column-list-item"></li>
+         <li class="column-list-item"></li>
+         <li class="column-list-item"></li>
        </ul>
       </div>
     </div>
 
-    <div class="cl right">
+    <div class="column right">
       <img class="tool-icon" src="images/icons8-tools-50.png" alt="">
-      <h2 class="clh2">Tools</h2>
+      <h2 class="column-head">Utilities:</h2>
 
-      <div class="toolli">
+      <div class="tool-list">
         <ul>
-          <li class="clli"><img class="pro-icon" src="images/icons8-git-50.png" alt="">Git</li>
-          <li class="clli">Linux</li>
-          <li class="clli"> <img class="pro-icon" src="images/github.svg" alt="">GitHub</li>
-          <li class="clli">Bash</li>
-          <li class="clli"></li>
+          <li class="column-list-item"><img class="pro-icon" src="images/icons8-git-50.png" alt="">Git</li>
+          <li class="column-list-item"><img class="pro-icon" src="images/linux-logo-png-transparent-3701945518.png" alt=""> Linux</li>
+          <li class="column-list-item"><img class="pro-icon" src="images/github.svg" alt="">GitHub</li>
+          <li class="column-list-item"><img class="pro-icon" src="images/1800px-gnu_bash_logo-1024x705-1556253469.png" alt=""> Bash</li>
+          <li class="column-list-item"></li>
         </ul>
       </div>
     </div>
@@ -139,9 +136,8 @@
     <!-- Project item 1 -->
     <div>
       <div class="project-item ">
-        <p class="hover-text">Test</p>
         <a href="https://jevinus.github.io/image-search-app/" target="_blank" rel="noreferrer">
-       <img class="img-prjct"  src="./images/jevinus.github.io_image-search-app_.png" alt="Capture of an Image search app"></a>
+       <img class="project-image"  src="./images/jevinus.github.io_image-search-app_.png" alt="Capture of an Image search app"></a>
       </div>
     </div>
 
@@ -179,44 +175,21 @@
   <hr>
 
   <!-- Form -->
-<section class="form-s" id="contact">
+<section class="form" id="contact">
   <div>
     <h1 class="contact-head">Contact me:</h1>
   </div>
 
-
-  <form action="/form-handling-url" method="post">
-    <fieldset>
-
-      <div>
-        <label for="firstName">First Name</label>
-        <input type="text" id="firstName" name="first_name">
-       </div>
-
-      <div>
-       <label for="lastName">Last Name</label>
-       <input type="text" id="lastName" name="last_name">
-      </div>
-
-       <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email_address">
-       </div>
-    </fieldset>
-    <button for=""></button>
-  </form>
 </section>
 
 <!-- Footer and scripts -->
  <footer id="footer">
   <div class="bottom-footer">
-    <h1 class="h1f">Built from scratch :) 2024</h1>
+    <h1 class="footer-text">Built from scratch by Jevinus :) 2024</h1>
   </div>
  </footer>
 
   <script src="./particles.js"></script>
   <script src="./app.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  <script src="./slick.js"></script>
 </body>
 </html>

@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
   margin: 0px;
   border: 0px;
   padding: 0px;
   list-style: none;
   text-decoration: none!important;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  scroll-behavior: smooth;
+  transition-delay: inherit;
+  transition-delay: initial;
+  transition-delay: unset;
 }
 
 a {
@@ -18,31 +27,34 @@ a {
   align-items: center;
 }
 
-/* Name intro */
+/* Landing text */
 .title {
   font-weight: 600;
   text-align: center;
   color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  right: 30%;
+  text-align: center;
 }
 
+/* For span element in name */
 .name-color {
   text-shadow: 4px 4px 10px white;
   color: white(2, 68, 68);
 }
 
 
-/* Navigation */
-.navbar {
-  color: white;
-  background: #86b8db;
-  position: sticky!important;
-  top: 0;
-  border-bottom: 2px solid rgba(133, 133, 133, 0.25);
+/* Nav responsiveness */
+.nav-container {
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Nav accessibility */
 a:visited {
-  color: white;
+  color:  white;
 }
 
 a:hover {
@@ -53,6 +65,16 @@ a:link {
   color:white;
 }
 
+/* Nav */
+.navbar {
+  color: white;
+  position: absolute;
+  width: 98vw;
+  top: 0;
+  height: 100px;
+  margin: 16px;
+}
+
 /* Nav main */
 .social-links {
   display: flex;
@@ -61,7 +83,7 @@ a:link {
 }
 
 li {
-  margin: 8px;
+  margin: 12px;
   margin-left: 12px;
   font-size: 32px;
   font-weight: 500;
@@ -76,26 +98,34 @@ li {
 
 /* Nav links */
 .nav-icon {
-  height: 48px;
-  width: 46px;
+  height: 50px;
+  width: 56px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.button-landing {
+  height: 0.1px;
+}
+
 /* Column pre-text */
-.background-text {
-  height: 450px;
-  margin-bottom: -180px;
+.column-background {
+  height: 600px;
+  margin-bottom: -250px;
   background-color: #86b8db;
 }
 
 /* Main text below nav */
-.main-h {
+.about-h2 {
+  padding-top: 16px;
   color: white;
   padding: 16px;
+  font-size: 36px;
+  text-align: center;
 }
-.p-main-cn {
+
+.para-con {
   margin-top: 24px;
   display: flex;
   align-items: center;
@@ -103,24 +133,28 @@ li {
   font-size: 20px;
 }
 
-.p-main {
+.para {
+  max-width: 700px;
   color: white;
-  max-width: 55vw;
+  text-align: start;
   text-align: center;
 }
 
 
 
 /* Skills column */
- .cl-container {
+ .column-container {
   height: 700px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  transition-delay: 3s;
+transition-delay: 2s, 4ms;
+
  }
 
- .cl {
+ .column {
   height: 650px;
   border: solid 1px rgba(128, 128, 128, 0.541);
   background-color: white;
@@ -132,39 +166,32 @@ li {
 
  .tool-icon {
   margin-top: 86px;
-  background-color: #86b8db;
-  border-radius: 50px;
-  border: 25px solid #86b8db;
   padding: 24px;
-  height: 60px;
-  width: 60px;
-
- }
- .toolli {
-
+  height: 80px;
+  width: 90px;
  }
 
  .pro-icon {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 35px;
  }
 
- .clh2 {
-  margin-top: 24px;
+ .column-head {
+  margin: 24px 0px 36px 0px;
+  font-size: 26px;
  }
 
- .clli {
+ .column-list-item {
   color: black;
   font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
  }
 
  .left {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
- }
-
- .mid {
-
  }
 
  .right {
@@ -173,6 +200,13 @@ li {
  }
 
 /* Description section */
+.personal-desc-title {
+  margin-top: 64px;
+  padding: 64px;
+  text-align: start;
+  font-size: 36px;
+}
+
 #personal-desc-container {
   display: flex;
   overflow: hidden;
@@ -186,12 +220,6 @@ li {
   height: 400px;
   width: 28vw;
   line-height: 1.5;
-}
-
-.personal-desc-title {
-  padding: 86px;
-  text-align: start;
-  font-size: 36px;
 }
 
 .desc-header {
@@ -233,29 +261,21 @@ li {
   border: 2px solid black;
 }
 
-.img-prjct {
+.project-image {
   max-height: 100%;
   min-width: 100%;
-
 }
 
-.img-prjct:hover {
+.project-image:hover {
   opacity: 0.25;
   background-color: grey;
   transition: 0.8s;
   cursor: pointer;
 }
 
-.hover-text {
-  display: none;
-}
-.hover-text:hover {
-  display: block;
-}
-
 /* Form */
 
-.form-s {
+.form {
   margin-bottom: 100px;
 }
 
@@ -270,7 +290,7 @@ li {
   align-items: center;
 }
 
-.h1f {
+.footer-text {
   color: white;
   font-size: 24px;
 }
