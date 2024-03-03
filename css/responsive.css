@@ -48,9 +48,9 @@
     width: 70px;
   }
   
-   .pro-icon {
-    width: 40px;
-    height: 35px;
+   .column-icon {
+    width: 30px;
+    height: 25px;
    }
   
    .column-head {
@@ -79,6 +79,11 @@
 
   .personal-desc-title {
     font-size: 28px;
+  }
+
+  .personal-desc {
+    height: 500px;
+    gap: 12px;
   }
 }
 
@@ -194,7 +199,7 @@
   }
 
   .footer-text {
-    font-size: 17px;
+    font-size: 17pxs;
   }
 }
 
