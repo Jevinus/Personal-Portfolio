@@ -12,7 +12,7 @@
  <main>
   <div id="particles-js"></div>
    <section id="nav-landing-body">
-    <div class="button-landing" id="button_landing"></div>
+    <div class="button-landing" id="button-landing"></div>
      <nav class="navbar" id="nav">
 
     <div class="container nav-container">
@@ -38,7 +38,7 @@
       <h1 class="title">Hello, i'm <span class="name-color">Kevin</span>.<br>A <em>Front-End</em> Web <br> Developer.</h1>
 
     <!-- Scroll down button-->
-      <a href="#button_landing"><div class="scroll-down"></div></a>
+      <a href="#button-landing"><div class="scroll-down"></div></a>
     </div>
   </section>
  </main>
@@ -176,8 +176,15 @@
 
   <!-- Form -->
 <section class="form" id="contact">
-  <div>
-    <h1 class="contact-head">Contact me:</h1>
+  <div class="form-container">
+    <form action="" ref="form" onSubmit="ContactUs()">
+      <h3 class="form-head">Contact me:</h3>
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <input type="text" id="phone" placeholder="Phone Number" required>
+      <textarea name="" id="message" cols="" rows="4" placeholder="Your message here" required></textarea>
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
   </div>
 
 </section>
@@ -189,7 +196,9 @@
   </div>
  </footer>
 
+ <script src="./script.jsx"></script>
   <script src="./particles.js"></script>
   <script src="./app.js"></script>
+
 </body>
 </html>
