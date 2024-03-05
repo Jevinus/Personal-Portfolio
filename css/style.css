@@ -262,11 +262,10 @@ transition-delay: 2s, 4ms;
   border-radius: 16px;
   overflow: hidden;
   background-color: grey;
+  border: 2px solid #59a4d9;
 }
 
 .project-image {
-  max-height: 100%;
-  min-width: 100%;
 }
 
 .project-image:hover {
