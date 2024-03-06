@@ -246,23 +246,28 @@ transition-delay: 2s, 4ms;
   margin-bottom: 36px;
   text-align: center;
   padding: 16px;
+  color: black;
 }
 
 .projects-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2.5rem;
+  align-items: start;
+	display: grid;
+	grid-gap: 16px;
+	grid-template-columns: repeat(auto-fit, 400px);
+	justify-content: center;
+  gap: 125px;
   padding: 16px;
 }
 
 .project-item {
   height: 300px;
-  width: 425px;
-  border-radius: 16px;
+  width: 400px;
+  border-radius: 15px;
   overflow: hidden;
   background-color: grey;
+  border: 2px solid #59a4d9
 }
+
 
 .project-image:hover {
   opacity: 0.25;
@@ -296,13 +301,7 @@ form {
   font-size: 24px;
 }
 
-textarea {
-  display: flex;
-  align-items: center;
-  justify-self: center;
-  border-radius: 8px;
-}
-
+/* Form input */
 input {
   border: 0;
   border-radius: 8px;
@@ -311,6 +310,13 @@ input {
   outline: none;
   background: #f5f5f5;
   font-size: 16px;
+}
+
+textarea {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  border-radius: 8px;
 }
 
 .submit-button {

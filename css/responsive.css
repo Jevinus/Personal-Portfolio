@@ -49,16 +49,16 @@
     width: 70px;
   }
   
-   .column-icon {
+  .column-icon {
     width: 30px;
     height: 25px;
-   }
+  }
   
-   .column-head {
+  .column-head {
     margin: 24px 0px 36px 0px;
     font-size: 18px;
     text-align: center;
-   }
+  }
   
   .column-list-item {
     font-size: 18px;
@@ -293,7 +293,11 @@
   input {
     padding: 12px;
     font-size: 12px;
-  }  
+  }
+  
+  .footer-text {
+    font-size: 18px!important;
+  }
 }
 
 @media screen and (max-width: 481px) {
