@@ -262,10 +262,6 @@ transition-delay: 2s, 4ms;
   border-radius: 16px;
   overflow: hidden;
   background-color: grey;
-  border: 2px solid #59a4d9;
-}
-
-.project-image {
 }
 
 .project-image:hover {
@@ -304,10 +300,12 @@ textarea {
   display: flex;
   align-items: center;
   justify-self: center;
+  border-radius: 8px;
 }
 
 input {
   border: 0;
+  border-radius: 8px;
   margin: 10px 0;
   padding: 20px;
   outline: none;
