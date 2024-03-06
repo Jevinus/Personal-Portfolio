@@ -250,9 +250,8 @@ transition-delay: 2s, 4ms;
 }
 
 .projects-container {
-  align-items: start;
+  align-items: center;
 	display: grid;
-	grid-gap: 16px;
 	grid-template-columns: repeat(auto-fit, 400px);
 	justify-content: center;
   gap: 125px;
@@ -265,7 +264,8 @@ transition-delay: 2s, 4ms;
   border-radius: 15px;
   overflow: hidden;
   background-color: grey;
-  border: 2px solid #59a4d9
+  border: 2px solid #59a4d9;
+  margin: 0 auto;
 }
 
 
