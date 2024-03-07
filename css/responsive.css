@@ -63,7 +63,6 @@
   .column-list-item {
     font-size: 18px;
   }
-  
 
   .about-h2 {
     padding-top: 16px;
@@ -72,7 +71,7 @@
     font-size: 36px;
     text-align: center;
   }
-  
+
   .para {
     font-size: 18px;
     width: 65vw!important;
@@ -202,11 +201,10 @@
 
   .projects-container {
     flex-direction: column;
-    gap: 48px;
   }
 
   .project-item {
-    width: 450px;
+    width: 400px;
   }
 
   form {

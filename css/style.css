@@ -53,16 +53,12 @@ a {
   align-items: center;
 }
 
-a:visited {
-  color:  white;
-}
-
 a:hover {
   color: grey;
 }
 
-a:link {
-  color:white;
+a, a:active {
+  color: inherit;
 }
 
 /* Nav */
@@ -139,8 +135,6 @@ li {
   text-align: start;
   text-align: center;
 }
-
-
 
 /* Skills column */
 .column-container {
@@ -239,7 +233,6 @@ transition-delay: 2s, 4ms;
   text-align: start;
 }
 
-
 /* Projects section */
 .project-head {
   font-size: 36px;
@@ -263,15 +256,12 @@ transition-delay: 2s, 4ms;
   width: 400px;
   border-radius: 15px;
   overflow: hidden;
-  background-color: grey;
   border: 2px solid #59a4d9;
-  margin: 0 auto;
 }
 
-
-.project-image:hover {
-  opacity: 0.25;
-  background-color: grey;
+.project-item:hover {
+  opacity: 0.5;
+  background-color: rgb(66, 59, 59);
   transition: 0.8s;
   cursor: pointer;
 }
