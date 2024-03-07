@@ -92,7 +92,7 @@ li {
   max-width: 100%!important;
 }
 
-/* Nav links */
+/* Nav social links */
 .nav-icon {
   height: 50px;
   width: 56px;
@@ -101,6 +101,12 @@ li {
   align-items: center;
 }
 
+.nav-icon:hover {
+  transition: all .2s ease-in-out; 
+  transform: scale(1.4); 
+}
+
+/* In place because nav changes position at 768px */ 
 .button-landing {
   height: 0.1px;
 }
