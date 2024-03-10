@@ -283,7 +283,7 @@
   }
   
   .projects-container {
-    grid-template-columns: repeat(auto-fit, 330px);
+    grid-template-columns: repeat(auto-fit 330px);
   }
   .project-item {
     width: 330px;
