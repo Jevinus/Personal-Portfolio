@@ -260,7 +260,6 @@
     width: 80vw!important;
   }
 
-
   .column {
     width: 325px;
   }
@@ -283,10 +282,14 @@
   }
   
   .projects-container {
-    grid-template-columns: repeat(auto-fit 330px);
+    grid-template-columns: repeat(auto-fit 300px)!important;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
   }
+  
   .project-item {
-    width: 330px;
+    width: 300px;
   }
   form {
     width: 400px;
