@@ -76,15 +76,6 @@
     font-size: 18px;
     width: 65vw!important;
   }  
-
-  .personal-desc-title {
-    font-size: 28px;
-  }
-
-  .personal-desc {
-    height: 500px;
-    gap: 12px;
-  }
 }
 
 @media screen and (max-width: 900px) {
@@ -182,23 +173,6 @@
     border-bottom-left-radius: 15px;
   }
 
-  .personal-desc-title {
-    font-size: 20px;
-  }
-
-  #personal-desc-container {
-    flex-direction: column;
-  }
-  
-  .desc-header {
-  text-align: center;
-  }
-
-  .personal-desc {
-    width: 500px;
-    height: 300px;
-  }
-
   .projects-container {
     flex-direction: column;
   }
@@ -272,25 +246,20 @@
   .column-list-item {
     font-size: 20px!important;
   }
-
-  .personal-desc-title {
-    font-size: 18px;
-  }
-
-  .personal-desc {
-    width: 350px;
-  }
   
   .projects-container {
-    grid-template-columns: repeat(auto-fit 300px)!important;
-    width: 500px;
+    grid-template-columns: repeat(auto-fit, 300px);
+    width: 100vw;
     align-items: center;
     justify-content: center;
+    padding-left: 0;
   }
   
   .project-item {
     width: 300px;
+    justify-content: center;
   }
+
   form {
     width: 400px;
   }
